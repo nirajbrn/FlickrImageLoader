@@ -1,0 +1,133 @@
+ext {
+  // android
+  androidBuildToolsVersion = "25.0.2"
+  androidMinSdkVersion = 19
+  androidTargetSdkVersion = 26
+  androidCompileSdkVersion = 26
+  // libraries
+  gsonVersion = "2.3"
+  javaxAnnotationVersion = "1.2"
+  androidAnnotationsVersion = "20.0.0"
+  supportLibraryVersion = "25.1.1"
+  sdkSupportLibraryVersion = "22.0.0"
+  retrofitVersion = "1.9.0"
+  adapterRxJavaVersion = "2.0.0-beta2"
+  realmVersion = "0.87.0"
+  rxJavaVersion = "1.0.14"
+  rxAndroidVersion = "1.0.1"
+  junitVersion = "4.12"
+  fabricVersion = "2.5.2@aar"
+  domainVersion = "0.0.1"
+  dataVersion = "0.0.1"
+  reboundVersion = "0.3.8"
+  rippleDrawableVersion = "2.0.0"
+  recyclerViewVersion = "23.0.1"
+  rxJavaJoinsVersion = "0.21.0"
+  jodaTimeAndroidVersion = "2.9.0"
+  listViewAnimationsVersion = "3.1.0@aar"
+  stickyHeaderListVersion = "2.7.0"
+  expandableListVersion = "1.0.1"
+  facebookSdkVersion = "3.23.1"
+  playServicesVersion = "9.2.0"
+  circularImageViewVersion = "2.0.0"
+  multidexVersion = "1.0.0"
+  mixpanelVersion = "4.6.4"
+  gifViewVersion = "1.1.+"
+  helpshiftVersion = "4.1.1-support"
+  cardViewVersion = "23.0.1"
+  parseVersion = "1.+"
+  boltsVersion = "1.+"
+  reactiveNetworkVersion = "0.1.3"
+  markdownViewVersion = "1.1.0"
+  markdownJVersion = "0.4"
+  instabugVersion = "1+"
+  twitterSdkVersion = "1.11.0@aar"
+  inkPageIndicatorVersion = "1.0.1"
+  branchSdkVersion = "1.+"
+  glideVersion = "3.7.0"
+  crashlyticsVersion = "2.6.6@aar"
+  oneSignalVersion = "3.6.2@aar"
+  sparkleMotionVersion = "1.0.1"
+  leakCanaryVersion = "1.5"
+  lombokVersion = "1.16.18"
+  constraintLayoutVersion = "1.0.2"
+  eventBusVersion = "3.1.1"
+  pgpSpongyCastleVersion = "1.50.0.0"
+
+
+  dependencies = [lombok            : "org.projectlombok:lombok:${lombokVersion}",
+                  jodaTimeAndroid   : "net.danlew:android.joda:${jodaTimeAndroidVersion}"
+  ]
+
+  dataDependencies = [rxJava            : "io.reactivex:rxjava:${rxJavaVersion}",
+                      rxAndroid         : "io.reactivex:rxandroid:${rxAndroidVersion}",
+                      gson              : "com.google.code.gson:gson:${gsonVersion}",
+                      androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+                      retrofit          : "com.squareup.retrofit:retrofit:${retrofitVersion}",
+                      adapterRxJava     : "com.squareup.retrofit:adapter-rxjava:${adapterRxJavaVersion}",
+                      realm             : "io.realm:realm-android:${realmVersion}",
+                      domain            : "com.simpl.android:domain:${domainVersion}",
+                      appCompat7        : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+                      androidSupportV4  : "com.android.support:support-v4:${supportLibraryVersion}",
+                      glide             : "com.github.bumptech.glide:glide:${glideVersion}"]
+
+  domainDependencies = [rxJava         : "io.reactivex:rxjava:${rxJavaVersion}",
+                        javaxAnnotation: "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
+                        rxJavaJoins    : "io.reactivex:rxjava-joins:${rxJavaJoinsVersion}"]
+
+
+  appDependencies = [gson              : "com.google.code.gson:gson:${gsonVersion}",
+                     appCompat7        : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+                     design            : "com.android.support:design:${supportLibraryVersion}",
+                     butterknife       : "com.jakewharton:butterknife:7.0.1",
+                     androidSupportV4  : "com.android.support:support-v4:${supportLibraryVersion}",
+                     androidAnnotations: "com.android" + ".support:support-annotations:${androidAnnotationsVersion}",
+                     rxAndroid         : "io.reactivex:rxandroid:${rxAndroidVersion}",
+                     rxJava            : "io.reactivex:rxjava:${rxJavaVersion}",
+                     rebound           : "com.facebook.rebound:rebound:${reboundVersion}",
+                     rippleDrawable    : "com.github.ozodrukh:RippleDrawable:${rippleDrawableVersion}",
+                     recyclerView      : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+                     stickyHeaderList  : "se.emilsjolander:stickylistheaders:${stickyHeaderListVersion}",
+                     expandableListView: "it.sephiroth.android.library.fork" + ".slideexpandable:library:${expandableListVersion}",
+                     facebookSdk       : "com.facebook.android:facebook-android-sdk:${facebookSdkVersion}",
+                     playServicesPlus  : "com.google.android.gms:play-services-plus:${playServicesVersion}",
+                     playServicesAuth  : "com.google.android.gms:play-services-auth:${playServicesVersion}",
+                     circularImageView : "de.hdodenhof:circleimageview:${circularImageViewVersion}",
+                     multidex          : "com.android.support:multidex:${multidexVersion}",
+                     gcm               : "com.google.android.gms:play-services-gcm:${playServicesVersion}",
+                     location          : "com.google.android.gms:play-services-location:${playServicesVersion}",
+                     gifView           : "pl.droidsonroids.gif:android-gif-drawable:${gifViewVersion}",
+                     helpshift         : "com.helpshift:android-en-aar:${helpshiftVersion}",
+                     cardView          : "com.android.support:cardview-v7:${cardViewVersion}",
+                     parse             : "com.parse:parse-android:${parseVersion}",
+                     bolts             : "com.parse.bolts:bolts-android:${boltsVersion}",
+                     reactiveNetwork   : "com.github.pwittchen:reactivenetwork:${reactiveNetworkVersion}",
+                     markdownView      : "us.feras.mdv:markdownview:${markdownViewVersion}",
+                     markdownJ         : "org.markdownj:markdownj-core:${markdownJVersion}",
+                     instabug          : "com.instabug.library:instabugsupport:${instabugVersion}",
+                     inkPageIndicator  : "com.pacioianu.david:ink-page-indicator:${inkPageIndicatorVersion}",
+                     oneSignal         : "com.onesignal:OneSignal:${oneSignalVersion}",
+                     sparkleMotion     : "com.ifttt:sparklemotion:${sparkleMotionVersion}",
+                     branchSdk         : "io.branch.sdk.android:library:${branchSdkVersion}",
+                     constraintLayout  : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+                     eventBus          : "org.greenrobot:eventbus:${eventBusVersion}",
+                     reactNative       : "com.facebook.react:react-native:+",
+                     spongyCastle      : "com.madgag.spongycastle:pg:${pgpSpongyCastleVersion}"
+  ]
+
+  trackerDependencies =
+      [androidSupportV4  : "com.android.support:support-v4:${supportLibraryVersion}",
+       androidAnnotations: "com.android" + ".support:support-annotations:${androidAnnotationsVersion}",
+       crashlytics       : "com.crashlytics.sdk.android:crashlytics:${crashlyticsVersion}",
+       twitterSdk        : "com.twitter.sdk.android:twitter:${twitterSdkVersion}",
+       mixpanel          : "com.mixpanel.android:mixpanel-android:${mixpanelVersion}"]
+
+  debugDependencies = [
+                     leakCanary        : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+  ]
+
+
+  testDependencies = [
+          junit         : "junit:junit:${junitVersion}"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38acc7</color>
+    <color name="colorPrimaryDark">#88b8bb</color>
+    <color name="colorAccent">#000000</color>
+    <color name="header_text_color">#090909</color>
+    <color name="floor_random_color">#2ab164</color>
+
+    <color name="first_color">#407e0909</color>
+    <color name="second_color">#4088b8bb</color>
+    <color name="third_color">#4009437e</color>
+
+    <color name="category_separator_color">#f2f2f2</color>
+</resources>

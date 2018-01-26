@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Image Loader</string>
+    <string name="home">Home</string>
+    <string name="image_url">https://farm1.staticflickr.com/%1$s/%2$s_%3$s_t.jpg</string>
+</resources>
